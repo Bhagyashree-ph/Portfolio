@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ReactTyped } from "react-typed";
 import DaySky from '../backgrounds/DaySky';
 import NightSky from '../backgrounds/NightSky';
-import imgSrc from '../../assets/profile.png';
+import imgSrc from '../../assets/profile.jpg';
 
 export default function Hero({ darkMode }) {
 
