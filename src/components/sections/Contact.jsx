@@ -19,6 +19,11 @@ export default function Contact({ darkMode }) {
       setError('Please fill in all fields before submitting.');
       return;
     }
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) {
+      setError("Email is required");
+      return;
+    }
     setError('');
     // ✉️ EmailJS Integration
     emailjs.send(
